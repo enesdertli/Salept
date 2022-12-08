@@ -12,11 +12,11 @@ public class EnemyController : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
     }
-
+        
     
     void Update()
     {
-        rigidbody.velocity = new Vector2(velocity, 0);
+        rigidbody.velocity = new Vector2(velocity, rigidbody.velocity.y);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
