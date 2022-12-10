@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     float JumpForce = 7f;
     float speed = 3f;
     float points = 0;
+    float diamondAmount = 0;
 
     void Start()
     {
@@ -27,8 +28,9 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Diamond") {
-            Destroy(GameObject.FindWithTag("Diamond"));
+            Destroy(collision.gameObject);
             points += 5;
+            diamondAmount++;
         }
     }
 
@@ -56,5 +58,8 @@ public class PlayerMovement : MonoBehaviour
 
         bool playerHasHorizontalSpeed = Mathf.Abs(velocity.x) > Mathf.Epsilon;
         playerAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
+    }
+    public float GetDiamondAmount() {
+        return diamondAmount;
     }
 }
