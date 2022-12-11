@@ -11,9 +11,11 @@ public class PlayerMovement : MonoBehaviour
     float speed = 3f;
     float points = 0;
     float diamondAmount = 0;
+    BoxCollider2D boxCollider2D;
 
     void Start()
     {
+        boxCollider2D = GetComponent<BoxCollider2D>();
         rigidbody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
     }
@@ -61,5 +63,9 @@ public class PlayerMovement : MonoBehaviour
     }
     public float GetDiamondAmount() {
         return diamondAmount;
+    }
+
+    public BoxCollider2D GetFeetColliderOfPlayer() {
+        return boxCollider2D;
     }
 }
