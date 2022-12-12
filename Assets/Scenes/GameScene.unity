@@ -1669,6 +1669,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 838718863609808219, guid: d626fc3e1aebf004f89497e6ccb6d82c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e49e5cf947deb5c418865d8ac300dbc9, type: 2}
+    - target: {fileID: 838718863720570113, guid: d626fc3e1aebf004f89497e6ccb6d82c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 66a531c6a3830964da667e321d5a067e, type: 2}
+    - target: {fileID: 1719433502749394955, guid: d626fc3e1aebf004f89497e6ccb6d82c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 22fdbc954c37dec40815230aac521b6d, type: 2}
     - target: {fileID: 1719433503771015652, guid: d626fc3e1aebf004f89497e6ccb6d82c, type: 3}
       propertyPath: m_Name
       value: Diamonds in the screen
